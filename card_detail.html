@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Detail</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        .character-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .character-details h2 {
+            font-size: 2.5rem;
+        }
+
+        .bio {
+            margin-top: 20px;
+            font-size: 1.1rem;
+        }
+
+        .qr-section {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .qr-section img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body class="container mt-1">
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./images/download.jpg" alt="Logo"></a> 
+        </div>
+        <div class="search-bar">
+            <input type="text" class="form-control" placeholder="Search for a character...">
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <div class="container content">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="./images/download.jpg" alt="Character Image" class="character-image img-fluid">
+            </div>
+
+            <div class="col-md-8">
+                <div class="character-details">
+                    <h2>Character Name</h2>
+                    <p><strong>Birth:</strong> January 1, 1800</p>
+                    <p><strong>Death:</strong> December 31, 1880</p>
+                    <p><strong>Occupation:</strong> Historical Leader</p>
+                    <p><strong>Nationality:</strong> Vietnamese</p>
+
+                    <div class="bio">
+                        <h4>Biography</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit, lorem in interdum
+                            pharetra, urna purus consequat elit, vitae fermentum mi ligula vel tortor. Nam fringilla sit
+                            amet dolor nec facilisis. Nulla facilisi. Proin vitae dui vitae quam feugiat iaculis.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et corporis amet eveniet aspernatur distinctio soluta! Atque error facere enim sunt praesentium animi tenetur exercitationem unde, adipisci expedita, esse quae optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic inventore magnam voluptatibus! Nobis animi aliquam veritatis nulla hic totam, cumque placeat laboriosam rerum non neque vitae voluptates a nam aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, quo nam? Sint architecto dignissimos tenetur aliquam atque, rem vel labore provident. Libero dignissimos debitis maiores numquam velit minus ad enim.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- QR Code Section -->
+                <!-- <div class="qr-section">
+                    <h4>Learn more by scanning this QR code:</h4>
+                    <img src="./images/download.jpg" alt="QR Code">
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMF05yE2eI6ZPE6iXBIpZu4l1K4mS3eTwQZrM5ttt6EL8oP5dLVhK9K4lVO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

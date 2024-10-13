@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <input type="file" id="photo">
+  <button onclick="updateImage()">Upload</button>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-storage.js"></script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAOTivhd3FC73izyYnGhTn4LW5lOOCwTMw",
+      authDomain: "fir-test-81a31.firebaseapp.com",
+      projectId: "fir-test-81a31",
+      storageBucket: "fir-test-81a31.appspot.com",
+      messagingSenderId: "860222716798",
+      appId: "1:860222716798:web:114c891f01f9758c41112f",
+      measurementId: "G-91BWSK8LH2"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+  <script src="./js/upload.js"></script>
+</body>
+</html>

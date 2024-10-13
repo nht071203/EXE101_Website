@@ -1,0 +1,60 @@
+header {
+    background-color: #d70018;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header img {
+    height: 50px;
+}
+
+.search-bar input {
+    padding: 5px;
+    width: 300px;
+}
+
+.character img {
+    width: 100%;
+    height: auto;
+}
+
+.banner {
+    background-color: #ddd;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.banner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}   
+
+.nav-item .nav-link {
+    color: black;
+    font-weight: bold;
+}
+
+.nav-item:hover{
+    background-color: yellowgreen;
+    font-size: 1.1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .search-bar input {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+    }
+}
