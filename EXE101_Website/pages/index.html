@@ -8,8 +8,10 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="icon" href="./images/download.jpg">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="icon" href="/images/download.jpg">
+    <link rel="stylesheet" href="/css/header.css">
+    <!-- <link rel="stylesheet" href="/css/footer.css"> -->
 </head>
 
 <body class="container mt-1">
@@ -17,7 +19,7 @@
     <header>
         <div class="d-flex">
             <div class="logo">
-                <a href="index.html"><img src="./images/download.jpg" alt="Logo"></a>
+                <a href="/pages/index.html"><img src="/images/download.jpg" alt="Logo"></a>
             </div>
         </div>
 
@@ -31,7 +33,7 @@
         <!-- Sidebar -->
         <nav class="col-md-2 bg-light p-3">
             <ul class="nav flex-column">
-                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/pages/index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Characters</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">History</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
@@ -42,36 +44,34 @@
         <div class="col-md-10">
             <!-- Banner -->
             <div class="banner mb-3">
-                <img src="./images/download.jpg" alt="">
+                <img src="/images/banner_1.jpg" alt="">
             </div>
 
             <!-- Character List -->
             <div class="row">
                 <div class="col-6 col-md-4 col-lg-3">
                     <div class="card mb-3">
-                        <img class="card-img-top" src="./images/nguyen_du.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Nguyễn Du</h5>
+                        <a href="/pages/nguyen_du.html">
+                            <img class="card-img-top" src="/images/nguyen_du.jpg" alt="Card image cap">
+                        </a>
+                        <div class="card-body pt-0">
+                            <a class="text-decoration-none text-dark" href="/pages/nguyen_du.html">
+                                <h5 class="card-title">Nguyễn Du</h5>
+                            </a>
                             <p class="card-text">Mô tả ngắn</p>
-                            <a href="nguyen_du.html" class="btn btn-primary">Đến chi tiết</a>
+                            <a href="/pages/nguyen_du.html" class="btn btn-primary">Đến chi tiết</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3">
                     <div class="card mb-3">
-                        <img class="card-img-top" src="./images/ba_trieu.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Bà Triệu</h5>
-                            <p class="card-text">Mô tả ngắn</p>
-                            <a href="#" class="btn btn-primary">Đến chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card mb-3">
-                        <img class="card-img-top" src="./images/le_loi.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Lê Lợi</h5>
+                        <a href="#">
+                            <img class="card-img-top" src="/images/ba_trieu.jpg" alt="Card image cap">
+                        </a>
+                        <div class="card-body pt-0">
+                            <a class="text-decoration-none text-dark" href="#">
+                                <h5 class="card-title">Bà Triệu</h5>
+                            </a>
                             <p class="card-text">Mô tả ngắn</p>
                             <a href="#" class="btn btn-primary">Đến chi tiết</a>
                         </div>
@@ -79,9 +79,26 @@
                 </div>
                 <div class="col-6 col-md-4 col-lg-3">
                     <div class="card mb-3">
-                        <img class="card-img-top" src="./images/phan_boi_chau.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Phan Bội Châu</h5>
+                        <a href="#">
+                            <img class="card-img-top" src="/images/le_loi.jpg" alt="Card image cap">
+                        </a>
+                        <div class="card-body pt-0">
+                            <a class="text-decoration-none text-dark" href="#">
+                                <h5 class="card-title">Lê Lợi</h5>
+                            </a>
+                            <p class="card-text">Mô tả ngắn</p>
+                            <a href="#" class="btn btn-primary">Đến chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card mb-3">
+                        <a href="#">
+                            <img class="card-img-top" src="/images/phan_boi_chau.jpg" alt="Card image cap"></a>
+                        <div class="card-body pt-0">
+                            <a class="text-decoration-none text-dark" href="#">
+                                <h5 class="card-title">Phan Bội Châu</h5>
+                            </a>
                             <p class="card-text">Mô tả ngắn</p>
                             <a href="#" class="btn btn-primary">Đến chi tiết</a>
                         </div>
@@ -92,8 +109,10 @@
         </div>
     </div>
 
-    <footer>
-
+    <footer class="text-center p-3 bg-light">
+        <div>
+            &copy; EXE101 - Group 1
+        </div>
     </footer>
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
