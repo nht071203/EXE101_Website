@@ -1,0 +1,21 @@
+.character img {
+    width: 100%;
+    height: auto;
+}
+
+
+h1{
+    padding: 20px 0 20px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .search-bar input {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+    }
+}
+

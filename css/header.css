@@ -1,0 +1,26 @@
+header {
+    padding-top: 20px;
+}
+.navbar{
+    border-bottom: 3px solid rgb(64, 255, 6);
+}
+nav .navbar-brand img {
+    height: 60px;
+}
+
+ul .nav-item .nav-link {
+    font-size: 18px;
+}
+.nav-item .nav-link {
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+}
+
+.nav-item .nav-link:hover{
+/*     background-color: rgb(106, 116, 85); */
+    font-size: 1.2rem;
+}
+.search-bar input {
+    padding: 5px;
+    width: 300px;
+}
