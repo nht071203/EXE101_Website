@@ -1,0 +1,36 @@
+
+/* Footer Style*/
+.footer-container {
+    position: relative; /* Đảm bảo vị trí của phần tử là relative */
+    background: url('https://firebasestorage.googleapis.com/v0/b/prn221-69738.appspot.com/o/testcainha%2Fbanner.png?alt=media&token=e6b1c3c5-292a-444e-84d7-fd619d26aa5f');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f8e9e9;
+}
+
+.footer-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px); /* Hiệu ứng làm mờ */
+    -webkit-backdrop-filter: blur(10px); /* Hỗ trợ trình duyệt WebKit */
+    z-index: 0;
+}
+
+.footer-container .text-white,
+.footer-container a,
+.footer-container
+{
+    position: relative;
+    z-index: 1;
+    color: #000000 !important;
+}   
+
+.footer-container a:hover {
+    color: #c8ff00 !important;
+}
+
